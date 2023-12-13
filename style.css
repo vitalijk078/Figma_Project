@@ -12,11 +12,9 @@ html {
   .header {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
-    position: fixed;
-    width: calc(100% - 240px);
-    margin-left: 240px;
+    width: 1680px;
+    margin-left: 200px;
     height: 64px;
     background: #fff;
     box-shadow: 0px 4px 5px 0px #e9edf3;
@@ -34,8 +32,9 @@ html {
   }
   
   .header__profile {
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 56px;
   }
   
   .header__profile-search {
@@ -58,12 +57,14 @@ html {
   }
   
   .header__date-text {
+    display: flex;
     color: #899cb1;
     font-family: sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 148%;
+    margin-left: 120px;
   }
   
   .header__analytics-block {
@@ -133,7 +134,7 @@ html {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%; 
+    line-height: 140%; /* 21px */
   }
   
   .header__name-dropdown {
@@ -155,7 +156,7 @@ html {
   
   .sidebar {
     width: 240px;
-    height: 100%;
+    height: 2730px;
     background: #091336;
     display: flex;
     flex-direction: column;
@@ -208,7 +209,7 @@ html {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; 
+    line-height: 24px; /* 150% */
   }
   
   .sidebar__link-icon {
@@ -226,18 +227,20 @@ html {
   }
   
   .sidebar__button {
+    align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 200px;
     height: 52px;
-    padding: 13px 20px 14px 24px;
-    gap: 17px;
+    padding: 11px 20px 11px 65px;
+    gap: 31px;
     border-radius: 4px;
     background: #005ff8;
     border: none;
   }
   
   .sidebar__button-text {
+    
     margin: 0 auto;
     color: #fff;
     font-family: sans-serif;
@@ -255,7 +258,8 @@ html {
   
   .main-container {
     margin-top: 64px;
-    width: calc(100% - 240px);
+    width: 1920px;
+    height: 2730px;
     background: #f1f4f9;
     padding-right: 120px;
   }
